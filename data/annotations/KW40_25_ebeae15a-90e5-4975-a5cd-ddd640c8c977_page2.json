@@ -1,0 +1,51 @@
+[
+  {
+    "image": "data\\images\\aldi\\KW40_25_ebeae15a-90e5-4975-a5cd-ddd640c8c977_page2.png",
+    "items": [
+      {
+        "box": [
+          715,
+          580,
+          342,
+          369
+        ],
+        "confidence": 1.0,
+        "price": "3.99",
+        "product": "IJ.II ÄAAMV VHMEU.VIFON . l..s.. . a.i.v. SE AF wa S"
+      },
+      {
+        "box": [
+          1797,
+          2238,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "1.99",
+        "product": "RE xi . / an - ra Passt perfekt ....Üs DEa W mmn. mnr nm w/. . . nr"
+      },
+      {
+        "box": [
+          1804,
+          3303,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "1.79",
+        "product": "in allen Größen verfüggbar. Alle Artikel ohne ekoration. Gutes für al er schon am Vormittag des ersten Aktionstages kurz nac ersch ed zu r serem städndig vorha2c enen Sortim ent nur 1"
+      },
+      {
+        "box": [
+          622,
+          3342,
+          402,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "14.99",
+        "product": "in. Bekleidung teilweise nicht in allen Größen verfügbar. Alle Artikel ohnegDek ss diese Aktionsartikel im Unterschied zu unserem ständig vorhandenen Sortim ügung stehen. Sie können daher schon am Vormittag des ersten Aktionstages k"
+      }
+    ]
+  }
+]

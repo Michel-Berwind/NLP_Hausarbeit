@@ -1,0 +1,73 @@
+[
+  {
+    "image": "data\\images\\aldi\\KW40_25_ebeae15a-90e5-4975-a5cd-ddd640c8c977_page10.png",
+    "items": [
+      {
+        "box": [
+          659,
+          1524,
+          379,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "39.99",
+        "product": "Aluminium-Klinge, Schmttlan Zwei-Hand-Sicherheitssct mMmRaV 1R ntasn l-l nr an 7"
+      },
+      {
+        "box": [
+          1686,
+          1754,
+          392,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "24.39",
+        "product": "rantie, je Stück Zwei-Hand- icherheitsschqlür, . Aluminium-Klinge, Schnittlänge Füllmenge Fangsack ca. 20 Akku-Hec rüü ere"
+      },
+      {
+        "box": [
+          1724,
+          2556,
+          380,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "29.99",
+        "product": "Yersch . Fa rb en ,- ff.ir en Steckdosenleiste WORKZONE"
+      },
+      {
+        "box": [
+          659,
+          3312,
+          380,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "29.99",
+        "product": "ese Aktionsartikel im Unterschied zu unserem ständig vorhandenen Sortim stehen. Sie können daher schon am Vormittag des ersten Aktionstages lle Artikel ohne Dekoration"
+      },
+      {
+        "box": [
+          1724,
+          3342,
+          308,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "2.99",
+        "product": "nen daher schon am Vormittag des ersten Aktionstages kurz nach Gutes m Unterschied zu unserem ständig vorhandenen Sortiment nur ekoration"
+      },
+      {
+        "box": [
+          1198,
+          1251,
+          243,
+          242
+        ],
+        "confidence": 1.0,
+        "price": "4.44",
+        "product": "Aluminium-Klinge, Schnittlär Zwei-Hand-Sicherheitsschalt ca 510 mm Schnittkanazitä"
+      }
+    ]
+  }
+]

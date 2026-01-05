@@ -1,0 +1,73 @@
+[
+  {
+    "image": "data\\images\\aldi\\KW40_25_ebeae15a-90e5-4975-a5cd-ddd640c8c977_page11.png",
+    "items": [
+      {
+        "box": [
+          1694,
+          820,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "4.99",
+        "product": "Hintergrund Kl-generi Arbeitshandschuh Überzug 100 Latex, Größen S-XXL, Versch. Farben, 100 Polyester"
+      },
+      {
+        "box": [
+          1697,
+          1536,
+          343,
+          249
+        ],
+        "confidence": 1.0,
+        "price": "1.22",
+        "product": "ANWeiterelFarbeBäT OPGRÄEBITI i Fleecejacke LA M"
+      },
+      {
+        "box": [
+          671,
+          3221,
+          343,
+          369
+        ],
+        "confidence": 1.0,
+        "price": "4.99",
+        "product": "kauft sein. Bekleidung teilweise nicht in allen Größen verfügbar. Alle Artikel ohne ung, dass diese Aktionsartikel im Unterschied zu unserem ständig vorhandenen Sc zur erfügung stehen. Sie können daher schon am Vormittag des ersten Aktionstag"
+      },
+      {
+        "box": [
+          1697,
+          3297,
+          308,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "9.99",
+        "product": "Aktionsbeginn ausverkauft sein. Bekleidung teilweise nicht in allen Größen verfügba Wir bitten um Beachtung, dass diese Aktionsartikel im Unterschied zu unserem stänc in begrenzter Anzahl zur erfügung stehen. Sie können daher schon am Vormittag de"
+      },
+      {
+        "box": [
+          672,
+          1039,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "2.99",
+        "product": "Erwachsene, jeweils Einheitsgröße, je Stüc recycelt , 46 Polyacryl, für Kinder oder Versch. Modelle, 54 Polyester"
+      },
+      {
+        "box": [
+          648,
+          2386,
+          331,
+          279
+        ],
+        "confidence": 1.0,
+        "price": "16.99",
+        "product": "Varscn rarnen PDa mwAalle . DA . Verech Fsärhen 77 Baumiwalle .5 NTT A, /// D"
+      }
+    ]
+  }
+]
