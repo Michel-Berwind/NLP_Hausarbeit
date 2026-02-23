@@ -1,28 +1,28 @@
-# NLP-Based Supermarket Flyer Price Extraction
+# Automatische Extraktion von Produkt- und Preisinformationen aus Discounter-Prospekten
 
-**University Project for Natural Language Processing Course**
+**Masterarbeit - Natural Language Processing**
 
-This project extracts product information and prices from German supermarket flyers using a combination of Computer Vision (OCR) and **Natural Language Processing (NLP)** techniques.
+Dieses Repository enthält eine klassische CV + OCR + NLP Pipeline zur automatischen Extraktion von Produktinformationen und Preisen aus deutschen Discounter-Prospekten (Aldi & Lidl).
 
 ---
 
-## 🎯 Project Overview
+## 🎯 Projektübersicht
 
-Extract structured product data from retail flyer images:
-- **Product names** (using NLP entity extraction)
-- **Prices** (using OCR + pattern matching)
-- **Brand names** (using NER)
-- **Quantities** (using linguistic patterns)
-- **Product attributes** (using POS tagging)
+Die Pipeline extrahiert strukturierte Produktdaten aus Prospekt-Bildern:
+- **Produktnamen** (mittels NLP-Entitätserkennung)
+- **Preise** (mittels OCR + Pattern Matching)
+- **Markennamen** (mittels Named Entity Recognition)
+- **Mengenangaben** (mittels linguistischer Patterns)
+- **Produktattribute** (mittels POS-Tagging)
 
-### Example Input/Output
+### Beispiel Input/Output
 
-**Input**: Flyer image with product boxes
+**Input**: Prospekt-Bild mit Produktboxen
 
-**Output**:
+**Output** (JSON):
 ```json
 {
-  "image": "page_10.png",
+  "image": "KW40_25_ebeae15a-90e5-4975-a5cd-ddd640c8c977_page10.png",
   "items": [
     {
       "box": [100, 200, 150, 80],
@@ -30,7 +30,7 @@ Extract structured product data from retail flyer images:
       "product": "BARISSIMO Espresso Cremoso",
       "product_nlp": {
         "product_name": "BARISSIMO Espresso Cremoso",
-        "brands": ["BARISSIMO", "Espresso"],
+        "brands": ["BARISSIMO"],
         "quantities": [{"value": "500", "unit": "g"}],
         "confidence": 0.95,
         "method": "nlp"
@@ -42,248 +42,255 @@ Extract structured product data from retail flyer images:
 
 ---
 
-## 🧠 NLP Techniques Used
-
-This project demonstrates multiple NLP techniques required for university coursework:
-
-### 1. **Named Entity Recognition (NER)**
-- spaCy's German language model (`de_core_news_sm`)
-- Extracts brands, product names, and entities
-- Entity types: ORG, PRODUCT, MISC
-
-### 2. **Part-of-Speech (POS) Tagging**
-- Filters OCR noise by keeping nouns, proper nouns, adjectives
-- Removes verbs, prepositions (likely OCR errors)
-
-### 3. **Dependency Parsing**
-- Extracts compound product names
-- Links attributes to products
-- Identifies syntactic relationships
-
-### 4. **Noun Chunk Extraction**
-- Extracts multi-word product names
-- Uses syntactic parsing for phrase boundaries
-
-### 5. **Custom Pattern Matching**
-- spaCy Matcher for brand recognition
-- Rule-based patterns for product types
-
-### 6. **Token-Level Features**
-- Linguistic features: `is_upper`, `is_alpha`, `pos_`
-- Morphological analysis for noise filtering
-
-See [NLP_FEATURES.md](NLP_FEATURES.md) for detailed documentation.
-
----
-
-## 🏗️ Architecture
+## 🏗️ Pipeline-Architektur
 
 ```
-Input Image
+Input: PDF/PNG
     ↓
 ┌─────────────────────────────────┐
-│  Computer Vision (OpenCV)       │
-│  - Color-based price box detect │
-│  - Morphological operations     │
-│  - Contour analysis             │
+│  1. Bildvorverarbeitung         │
+│     - Farbraumkonvertierung     │
+│     - Morphologische Operationen│
+│     - Kontrastanpassung         │
 └────────────┬────────────────────┘
              ↓
 ┌─────────────────────────────────┐
-│  OCR (Tesseract)                │
-│  - Text extraction              │
-│  - Multiple preprocessing       │
-│  - Multi-PSM modes              │
+│  2. Preisbox-Detektion (CV)     │
+│     - Farbbasierte Segmentierung│
+│     - Konturanalyse (OpenCV)    │
+│     - Heuristische Filterung    │
 └────────────┬────────────────────┘
              ↓
 ┌─────────────────────────────────┐
-│  NLP (spaCy)                    │
-│  - Named Entity Recognition     │
-│  - POS Tagging                  │
-│  - Dependency Parsing           │
-│  - Entity Extraction            │
+│  3. OCR (Tesseract)             │
+│     - Textextraktion            │
+│     - Multi-PSM-Modi            │
+│     - Noise Filtering           │
 └────────────┬────────────────────┘
              ↓
-    Structured JSON Output
+┌─────────────────────────────────┐
+│  4. NLP-Verarbeitung (spaCy)    │
+│     - Named Entity Recognition  │
+│     - POS-Tagging               │
+│     - Dependency Parsing        │
+│     - Pattern Matching          │
+└────────────┬────────────────────┘
+             ↓
+  Strukturiertes JSON-Output
 ```
 
 ---
 
-## 📦 Installation
+## 📦 Installation & Setup
 
-### Requirements
+### Voraussetzungen
 - Python 3.8+
 - Tesseract OCR
-- spaCy German model
+- Git
 
-### Setup
+### Schritt-für-Schritt Anleitung
 
-1. **Clone repository**:
+**1. Repository klonen:**
 ```bash
 git clone https://github.com/Michel-Berwind/NLP_Hausarbeit.git
 cd NLP_Hausarbeit
 ```
 
-2. **Create virtual environment**:
+**2. Virtuelle Umgebung erstellen:**
 ```bash
 python -m venv .venv
 .venv\Scripts\activate  # Windows
+# oder
 source .venv/bin/activate  # Linux/Mac
 ```
 
-3. **Install dependencies**:
+**3. Abhängigkeiten installieren:**
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Download spaCy German model**:
+**4. spaCy German Model herunterladen:**
 ```bash
 python -m spacy download de_core_news_sm
 ```
 
-5. **Install Tesseract OCR** (if not already installed):
-   - Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
-   - Linux: `sudo apt-get install tesseract-ocr tesseract-ocr-deu`
-   - Mac: `brew install tesseract tesseract-lang`
+**5. Tesseract OCR installieren:**
+- **Windows:** https://github.com/UB-Mannheim/tesseract/wiki
+- **Linux:** `sudo apt-get install tesseract-ocr tesseract-ocr-deu`
+- **Mac:** `brew install tesseract tesseract-lang`
 
 ---
 
-## 🚀 Usage
+## 🚀 Pipeline ausführen
 
-### Run Full Pipeline
-
-```bash
-python -m src.ocr.pipeline.pipeline_runner --input-dir "data/images/aldi" --output "data/annotations/results.json"
-```
-
-### Test NLP Features
+### Einzelnes Bild verarbeiten
 
 ```bash
-python test_nlp_features.py
+python -m src.pipeline --input-file "data/images/aldi/KW40_25_page10.png" \
+                       --output "results/page10.json"
 ```
 
-### Process Single Image
+### Gesamtes Verzeichnis verarbeiten
 
 ```bash
-python -m src.ocr.pipeline.pipeline_runner --input-file "data/images/aldi/page10.png" --output "output/page10.json"
+python -m src.pipeline --input-dir "data/images/aldi" \
+                       --output "results/aldi_results.json" \
+                       --pattern "*.png"
 ```
+
+### Parameter
+
+| Parameter | Beschreibung | Standard |
+|-----------|--------------|----------|
+| `--input-file` | Einzelne Bilddatei | - |
+| `--input-dir` | Verzeichnis mit Bildern | - |
+| `--output` | Ausgabepfad für JSON | `results/output.json` |
+| `--pattern` | Dateimuster (bei --input-dir) | `*.png` |
+| `--debug-root` | Optional: Debug-Ausgaben | - |
 
 ---
 
-## 📁 Project Structure
+## 📊 Evaluation
+
+### Evaluation ausführen
+
+```bash
+python -m src.evaluation.evaluate --predictions "results/" \
+                                  --annotations "data/annotations/" \
+                                  --iou-threshold 0.5 \
+                                  --output "evaluation_results.json"
+```
+
+### Metriken
+
+Die Evaluation berechnet:
+- **Precision**: Anteil korrekt erkannter Boxen an allen erkannten
+- **Recall**: Anteil gefundener Ground-Truth-Boxen
+- **F1-Score**: Harmonisches Mittel von Precision und Recall
+- **IoU-basiertes Matching**: Bounding-Box-Überlappung (Standard: 50%)
+
+---
+
+## 📁 Projektstruktur
 
 ```
-NLP_Hausarbeit/
-├── src/
-│   ├── extraction/
-│   │   └── ner_model.py          # 🧠 NLP entity extraction (NEW)
-│   └── ocr/
-│       └── pipeline/
-│           ├── pipeline_runner.py     # Main orchestrator
-│           ├── image_preprocessing.py # CV preprocessing
-│           ├── pricebox_detection.py  # Price box detection
-│           ├── ocr_product_text.py    # OCR + NLP integration
-│           └── nlp_to_json.py         # Output formatting
+NLP_HAUSARBEIT/
+│
 ├── data/
-│   ├── images/          # Input flyer images
-│   └── annotations/     # Output JSON files
-├── test_nlp_features.py # NLP demonstration script
-├── NLP_FEATURES.md      # Detailed NLP documentation
-└── requirements.txt     # Python dependencies
+│   ├── raw/              # Original PDFs
+│   │   ├── aldi/
+│   │   └── lidl/
+│   ├── images/           # PDF → PNG Konvertierungen
+│   │   ├── aldi/
+│   │   └── lidl/
+│   ├── ocr_text/         # OCR Rohausgaben (optional)
+│   │   ├── aldi/
+│   │   └── lidl/
+│   └── annotations/      # Ground Truth für Evaluation
+│       └── *.json
+│
+├── src/
+│   ├── preprocessing/
+│   │   └── image_preprocessing.py    # Bildvorverarbeitung
+│   ├── detection/
+│   │   ├── pricebox_detection.py     # Preisbox-Detektion (OpenCV)
+│   │   └── price_region_detection.py # Region-basierte Detektion
+│   ├── ocr/
+│   │   └── ocr_product_text.py       # Tesseract Wrapper
+│   ├── nlp/
+│   │   ├── ner_model.py              # spaCy NER für Produkte
+│   │   └── rule_based.py             # Regelbasierte Extraktion
+│   ├── evaluation/
+│   │   └── evaluate.py               # Precision/Recall/F1
+│   ├── utils/
+│   │   ├── json_utils.py             # JSON Serialisierung
+│   │   └── text_quality_analysis.py  # OCR-Qualitätsanalyse
+│   └── pipeline.py                   # 🔥 HAUPTPIPELINE
+│
+├── results/              # Pipeline-Ausgaben (JSON)
+│   └── .gitkeep
+│
+├── notebooks/            # Explorative Analyse
+│   └── exploration.ipynb
+│
+├── .gitignore            # Git-Konfiguration
+├── requirements.txt      # Python-Abhängigkeiten
+├── README.md             # Diese Datei
+└── NLP_FEATURES.md       # Detaillierte NLP-Dokumentation
 ```
 
 ---
 
-## 📊 NLP Module Details
+## 🧠 NLP-Techniken
 
-### `src/extraction/ner_model.py`
+Dieses Projekt demonstriert folgende NLP-Methoden:
 
-The core NLP module implementing:
+### 1. **Named Entity Recognition (NER)**
+- spaCy German Model (`de_core_news_sm`)
+- Extraktion von Marken, Produktnamen, Organisationen
+- Entity-Typen: ORG, PRODUCT, MISC
 
-```python
-from src.extraction.ner_model import extract_product_entities
+### 2. **Part-of-Speech (POS) Tagging**
+- Filterung von OCR-Rauschen durch linguistische Analyse
+- Behalten: Nomen, Eigennamen, Adjektive
+- Entfernen: Verben, Präpositionen (wahrscheinlich OCR-Fehler)
 
-# Extract entities from text
-result = extract_product_entities("BARISSIMO Espresso 500g")
+### 3. **Dependency Parsing**
+- Extraktion von Kompositum-Produktnamen
+- Verknüpfung von Attributen zu Produkten
+- Analyse syntaktischer Relationen
 
-# Access NLP results
-print(result["product_name"])   # "BARISSIMO Espresso"
-print(result["brands"])          # ["BARISSIMO", "Espresso"]
-print(result["entities"])        # [{"text": "BARISSIMO", "label": "ORG"}]
-print(result["noun_chunks"])     # ["BARISSIMO", "Espresso"]
-print(result["quantities"])      # [{"value": "500", "unit": "g"}]
-print(result["pos_filtered"])    # POS-filtered text
-print(result["confidence"])      # 0.95
-```
+### 4. **Noun Chunk Extraction**
+- Extraktion mehrwortiger Produktnamen
+- Nutzung syntaktischer Phrasengrenzen
 
-### Key Classes
+### 5. **Custom Pattern Matching**
+- spaCy Matcher für Markenerkennung
+- Regelbasierte Patterns für Produkttypen und Mengen
 
-- **`ProductNERExtractor`**: Main NLP extraction class
-  - Loads spaCy model
-  - Configures custom patterns
-  - Extracts entities, brands, quantities
-  - Calculates confidence scores
+### 6. **Token-Level Features**
+- Linguistische Features: `is_upper`, `is_alpha`, `pos_`
+- Morphologische Analyse zur Rauschfilterung
 
----
-
-## 🔬 NLP Evaluation
-
-### Before NLP (Regex-only)
-- ❌ Hardcoded brand lists
-- ❌ No structure (just strings)
-- ❌ No confidence scores
-- ❌ Poor noise handling
-- ❌ Not academically rigorous
-
-### After NLP Integration
-- ✅ Automatic entity recognition
-- ✅ Structured entity output
-- ✅ Confidence estimation
-- ✅ POS-based noise filtering
-- ✅ True NLP techniques for university project
+**Detaillierte Dokumentation:** Siehe [NLP_FEATURES.md](NLP_FEATURES.md)
 
 ---
 
-## 📈 Results
+## 📈 Reproduzierbarkeit
 
-The system now extracts:
+### Experiment wiederholen
 
-| Metric | Value |
-|--------|-------|
-| NLP Entities Extracted | ✅ Yes (NER) |
-| POS Tagging Used | ✅ Yes |
-| Dependency Parsing | ✅ Yes |
-| Noun Chunks | ✅ Yes |
-| Brand Detection | ✅ Automatic (NER) |
-| Confidence Scores | ✅ Linguistic features |
+1. **Daten vorbereiten:** PDFs in `data/raw/` ablegen
+2. **Pipeline ausführen:** 
+   ```bash
+   python -m src.pipeline --input-dir data/images/aldi --output results/aldi.json
+   ```
+3. **Evaluation:** 
+   ```bash
+   python -m src.evaluation.evaluate --predictions results/ --annotations data/annotations/
+   ```
 
----
+### Erwartete Ergebnisse
 
-## 🎓 Academic Justification
-
-This project satisfies NLP course requirements by implementing:
-
-1. **Token-level NLP**: Tokenization, POS tagging, morphology
-2. **Syntactic NLP**: Dependency parsing, phrase structure
-3. **Semantic NLP**: Named entity recognition, entity typing
-4. **Applied NLP**: Information extraction, domain adaptation
-5. **Hybrid NLP**: Combining rule-based and ML approaches
-6. **Multi-lingual NLP**: German language processing
-
-See [NLP_FEATURES.md](NLP_FEATURES.md) for complete academic documentation.
+Die Pipeline wurde auf ALDI- und LIDL-Prospekten getestet:
+- **Testdaten:** 7-10 Seiten pro Prospekt
+- **Erwartete F1-Scores:** Variieren je nach Prospektqualität (siehe Evaluation)
 
 ---
 
-## 🛠️ Technologies
+## 🔧 Technologie-Stack
 
-- **Computer Vision**: OpenCV
-- **OCR**: Tesseract
-- **NLP Framework**: spaCy 3.x
-- **Language Model**: de_core_news_sm (German)
-- **Language**: Python 3.8+
+| Komponente | Technologie | Zweck |
+|------------|------------|-------|
+| **Computer Vision** | OpenCV | Preisbox-Detektion |
+| **OCR** | Tesseract | Textextraktion |
+| **NLP** | spaCy (`de_core_news_sm`) | Entitätserkennung |
+| **Preprocessing** | NumPy, OpenCV | Bildverarbeitung |
+| **Evaluation** | Custom Python | Metriken-Berechnung |
 
 ---
 
-## 📝 Example Output
+## 📝 Beispiel-Output
 
 ```json
 {
@@ -292,20 +299,16 @@ See [NLP_FEATURES.md](NLP_FEATURES.md) for complete academic documentation.
     {
       "box": [523, 891, 234, 167],
       "price": "2.99",
-      "confidence": 1.0,
       "product": "BARISSIMO Espresso Cremoso",
       "product_nlp": {
         "product_name": "BARISSIMO Espresso Cremoso",
         "ocr_text": "BARISSIMO Espresso Cremoso 500-g-Packung",
         "nlp_entities": [
-          {"text": "BARISSIMO", "label": "ORG", "start": 0, "end": 9}
+          {"text": "BARISSIMO", "label": "ORG"}
         ],
         "brands": ["BARISSIMO"],
-        "quantities": [
-          {"value": "500", "unit": "g", "full_text": "500-g"}
-        ],
+        "quantities": [{"value": "500", "unit": "g"}],
         "noun_chunks": ["BARISSIMO", "Espresso Cremoso"],
-        "pos_filtered": "BARISSIMO Espresso Cremoso Packung",
         "confidence": 0.95,
         "method": "nlp"
       }
@@ -316,45 +319,14 @@ See [NLP_FEATURES.md](NLP_FEATURES.md) for complete academic documentation.
 
 ---
 
-## 📚 Documentation
+## 📄 Lizenz
 
-- [NLP_FEATURES.md](NLP_FEATURES.md) - Detailed NLP techniques documentation
-- [page_coffee_preprocessing_analysis.md](page_coffee_preprocessing_analysis.md) - Preprocessing details
-- [pricebox_detection_summary.md](pricebox_detection_summary.md) - Detection algorithm
+Dieses Projekt wurde für akademische Zwecke erstellt (Masterarbeit).
 
 ---
 
-## 🤝 Contributing
+## 👤 Autor
 
-This is a university project. For questions or suggestions, please open an issue.
-
----
-
-## 📄 License
-
-This project is for academic purposes.
-
----
-
-## 👤 Author
-
-**Michel Berwind**
-- GitHub: [@Michel-Berwind](https://github.com/Michel-Berwind)
-
----
-
-## 🙏 Acknowledgments
-
-- **spaCy**: Modern NLP library
-- **Explosion AI**: German language models
-- **Tesseract OCR**: Open-source OCR engine
-- **OpenCV**: Computer vision library
-
----
-
-## 📖 References
-
-1. Honnibal, M., & Montani, I. (2017). spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing.
-2. Universal Dependencies: https://universaldependencies.org/
-3. spaCy Documentation: https://spacy.io/
-4. German NLP: https://spacy.io/models/de
+Michel Berwind  
+Masterarbeit - Natural Language Processing  
+2026
