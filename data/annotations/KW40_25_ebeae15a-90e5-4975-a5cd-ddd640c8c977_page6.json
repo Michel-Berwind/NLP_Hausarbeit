@@ -1,0 +1,398 @@
+[
+  {
+    "image": "data\\images\\aldi\\KW40_25_ebeae15a-90e5-4975-a5cd-ddd640c8c977_page6.png",
+    "items": [
+      {
+        "box": [
+          697,
+          632,
+          342,
+          369
+        ],
+        "confidence": 1.0,
+        "price": "40.02",
+        "product": "HELLO AUTUMN",
+        "product_nlp": {
+          "product_name": "HELLO AUTUMN",
+          "ocr_text": "l M . HELLO AUTUMN & ß / KOKETT f. Herbst-Servietten FSC Versch. Motive, 3-lagig, Maße je ca. 33 33 cm bzw. 24 24 cm FRED VARGAS ANNE SANDERS Nehe well.. . Das GIÜCK NN B",
+          "nlp_entities": [
+            {
+              "text": "HELLO",
+              "label": "MISC",
+              "start": 6,
+              "end": 11
+            },
+            {
+              "text": "Herbst-Servietten",
+              "label": "LOC",
+              "start": 35,
+              "end": 52
+            },
+            {
+              "text": "GIÜCK NN B",
+              "label": "ORG",
+              "start": 160,
+              "end": 170
+            }
+          ],
+          "brands": [
+            "ANNE",
+            "AUTUMN",
+            "FRED",
+            "FSC",
+            "GIÜCK",
+            "GIÜCK NN B",
+            "HELLO",
+            "KOKETT",
+            "SANDERS",
+            "VARGAS"
+          ],
+          "quantities": [
+            {
+              "value": "33",
+              "unit": "cm",
+              "full_text": "33 cm"
+            },
+            {
+              "value": "24",
+              "unit": "cm",
+              "full_text": "24 cm"
+            }
+          ],
+          "noun_chunks": [
+            "l M",
+            "HELLO",
+            "AUTUMN",
+            "KOKETT",
+            "Herbst-Servietten",
+            "FSC Versch",
+            "Motive",
+            "3-lagig",
+            "Maße",
+            "FRED",
+            "VARGAS",
+            "SANDERS",
+            "Das GIÜCK NN"
+          ],
+          "pos_filtered": "l M HELLO AUTUMN KOKETT Herbst-Servietten FSC Versch Motive 3-lagig Maße 33 33 24 24 FRED VARGAS SANDERS GIÜCK NN",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.20339550454328073,
+            "size_score": 0.36,
+            "stroke_width": 17.56129264831543,
+            "contrast": 1.0,
+            "density": 0.24307371368968522,
+            "is_title": true,
+            "confidence": 0.5253260227319527
+          }
+        }
+      },
+      {
+        "box": [
+          697,
+          1325,
+          307,
+          249
+        ],
+        "confidence": 1.0,
+        "price": "4.99",
+        "product": "ZMESE Maße",
+        "product_nlp": {
+          "product_name": "ZMESE Maße",
+          "ocr_text": "Phckung ZMESE Maße je ca. Bestseller- Roman NE SANDERS Glück Versch. Titel, bis zu Gleis 496 Seiten, je Stück",
+          "nlp_entities": [
+            {
+              "text": "ZMESE",
+              "label": "MISC",
+              "start": 8,
+              "end": 13
+            }
+          ],
+          "brands": [
+            "SANDERS",
+            "ZMESE"
+          ],
+          "quantities": [
+            {
+              "value": "496",
+              "unit": "Seiten",
+              "full_text": "496 Seiten"
+            },
+            {
+              "value": "496",
+              "unit": "Seiten",
+              "full_text": "496 Seiten"
+            }
+          ],
+          "noun_chunks": [
+            "Phckung",
+            "ZMESE",
+            "Maße",
+            "je ca. Bestseller- Roman",
+            "NE",
+            "Glück",
+            "Versch",
+            "Titel",
+            "Gleis",
+            "Stück"
+          ],
+          "pos_filtered": "Phckung ZMESE Maße Roman NE SANDERS Glück Versch Titel Gleis 496 Seiten Stück",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.40138634633975767,
+            "size_score": 0.4,
+            "stroke_width": 45.650447845458984,
+            "contrast": 1.0,
+            "density": 0.40138634633975767,
+            "is_title": true,
+            "confidence": 0.610554538535903
+          }
+        }
+      },
+      {
+        "box": [
+          1741,
+          1634,
+          378,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "2.92",
+        "product": "Regal Versch",
+        "product_nlp": {
+          "product_name": "Regal Versch",
+          "ocr_text": "CASALUK mit Regal Versch. Farben, EVA- ägtirutschfüße, inkl. LED-Glühbirne, Kabel- länge am Boden ca. un 105 cm, Maße ca. Fa Ba 29,5 29,5 158 cm, Jahre Garantie, Stück",
+          "nlp_entities": [
+            {
+              "text": "CASALUK",
+              "label": "ORG",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "text": "Regal Versch",
+              "label": "PER",
+              "start": 12,
+              "end": 24
+            },
+            {
+              "text": "EVA-",
+              "label": "MISC",
+              "start": 34,
+              "end": 38
+            },
+            {
+              "text": "un 105",
+              "label": "MISC",
+              "start": 102,
+              "end": 108
+            },
+            {
+              "text": "Fa Ba",
+              "label": "MISC",
+              "start": 122,
+              "end": 127
+            }
+          ],
+          "brands": [
+            "CASALUK"
+          ],
+          "quantities": [
+            {
+              "value": "105",
+              "unit": "cm",
+              "full_text": "105 cm"
+            },
+            {
+              "value": "158",
+              "unit": "cm",
+              "full_text": "158 cm"
+            }
+          ],
+          "noun_chunks": [
+            "Regal Versch",
+            "Farben",
+            "LED-Glühbirne",
+            "Kabel- länge",
+            "Boden",
+            "Maße",
+            "Fa Ba",
+            "Jahre Garantie",
+            "Stück"
+          ],
+          "pos_filtered": "Regal Versch Farben LED-Glühbirne länge Boden 105 Maße Fa Ba 29,5 29,5 158 Jahre Garantie Stück",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.6670147230108466,
+            "size_score": 0.12,
+            "stroke_width": 43.03324508666992,
+            "contrast": 1.0,
+            "density": 0.6670147230108466,
+            "is_title": true,
+            "confidence": 0.6468058892043387
+          }
+        }
+      },
+      {
+        "box": [
+          697,
+          2028,
+          307,
+          249
+        ],
+        "confidence": 1.0,
+        "price": "9.99",
+        "product": "CASALUX",
+        "product_nlp": {
+          "product_name": "CASALUX",
+          "ocr_text": "CASALUX Textile Deckenleuchte Versch. Farben, für den Innenbereich, Lichtfarbe warmweiß, Maße H ca. 38 10 cm, inkl. 2x E27-Leuchtmittel und Befestigungsmaterial, je Stück",
+          "nlp_entities": [
+            {
+              "text": "CASALUX",
+              "label": "ORG",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "text": "Versch",
+              "label": "PER",
+              "start": 30,
+              "end": 36
+            },
+            {
+              "text": "Maße H",
+              "label": "PER",
+              "start": 89,
+              "end": 95
+            }
+          ],
+          "brands": [
+            "CASALUX"
+          ],
+          "quantities": [
+            {
+              "value": "10",
+              "unit": "cm",
+              "full_text": "10 cm"
+            },
+            {
+              "value": "2",
+              "unit": "x",
+              "full_text": "2x"
+            }
+          ],
+          "noun_chunks": [
+            "CASALUX Textile Deckenleuchte Versch",
+            "Farben",
+            "den Innenbereich",
+            "Lichtfarbe",
+            "E27-Leuchtmittel",
+            "Befestigungsmaterial",
+            "je Stück"
+          ],
+          "pos_filtered": "CASALUX Textile Deckenleuchte Versch Farben Innenbereich Lichtfarbe Maße 38 10 2x E27-Leuchtmittel Befestigungsmaterial Stück",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.08779399121412336,
+            "size_score": 0.38,
+            "stroke_width": 13.784765243530273,
+            "contrast": 1.0,
+            "density": 0.11185329305377721,
+            "is_title": true,
+            "confidence": 0.48252352666961473
+          }
+        }
+      },
+      {
+        "box": [
+          1740,
+          2587,
+          308,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "1.99",
+        "product": "CREATION Windlicht",
+        "product_nlp": {
+          "product_name": "CREATION Windlicht",
+          "ocr_text": "HOME CREATION Windlicht in Flecht-Optik 10.AN Metall & Papier, für innen und / den geschützten Außenbereich, Maße H ca. 20 30 cm, je Stück",
+          "nlp_entities": [
+            {
+              "text": "HOME",
+              "label": "MISC",
+              "start": 0,
+              "end": 4
+            }
+          ],
+          "brands": [
+            "CREATION",
+            "HOME"
+          ],
+          "quantities": [
+            {
+              "value": "30",
+              "unit": "cm",
+              "full_text": "30 cm"
+            }
+          ],
+          "noun_chunks": [
+            "HOME",
+            "CREATION Windlicht",
+            "Flecht-Optik 10.AN",
+            "Metall",
+            "Papier",
+            "den geschützten Außenbereich",
+            "Stück"
+          ],
+          "pos_filtered": "HOME CREATION Windlicht Flecht-Optik 10.AN Metall Papier geschützten Außenbereich Maße 20 30 Stück",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.05868115742199811,
+            "size_score": 0.4,
+            "stroke_width": 3.196018934249878,
+            "contrast": 0.9882352941176471,
+            "density": 0.0988937575727398,
+            "is_title": true,
+            "confidence": 0.33964939578651804
+          }
+        }
+      },
+      {
+        "box": [
+          670,
+          3342,
+          360,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "14.29",
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "TT C va - VE eaa Did aVla - - K T AD Versch arbe nd Töp 55-60 cm, Maße Topf nl bzw. 12 11 cm Stück .11 J. Sln ON VENTEANNNN Wir bitten um Beachtung, dass diese Aktionsartikel in begrenzter Anzahl zur erfugun stehen. Sie kön Aktionsbeginn ausverkauft sein. Artikel ohne D",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.5051968550836857,
+            "size_score": 0.14,
+            "stroke_width": 27.98238182067871,
+            "contrast": 1.0,
+            "density": 0.5058985173824131,
+            "is_title": true,
+            "confidence": 0.587148908263347
+          }
+        }
+      }
+    ]
+  }
+]

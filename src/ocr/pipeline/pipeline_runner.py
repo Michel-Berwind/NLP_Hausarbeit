@@ -16,7 +16,7 @@ from src.ocr.pipeline.image_preprocessing import (
     save_preprocess_debug,
 )
 from src.ocr.pipeline.nlp_to_json import save_results, to_result_record
-from src.ocr.pipeline.ocr_product_text import extract_product_text
+from src.ocr.pipeline.ocr_product_text import extract_product_text, extract_product_text_with_nlp
 from src.ocr.pipeline.pricebox_detection import detect_prices
 
 
@@ -43,14 +43,21 @@ def process_image(image_path: Path, debug_root: Path) -> dict:
     if detections_without_prices > 0:
         print(f"  Filtered out {detections_without_prices} boxes without prices")
 
-    print(f"  Extracting product text from {len(detections_with_prices)} boxes...")
+    print(f"  Extracting product text from {len(detections_with_prices)} boxes using NLP...")
     for i, det in enumerate(detections_with_prices, 1):
         print(f"    Processing box {i}/{len(detections_with_prices)}...", end=" ", flush=True)
-        product_text = extract_product_text(img, det["box"]) or None
-        # Keep price and product separate
-        det["product"] = product_text
-        # Price is already in det["price"] from detect_prices
-        print("done")
+        
+        # Extract with full NLP analysis
+        product_result = extract_product_text_with_nlp(img, det["box"])
+        
+        # Store full NLP result in detection
+        det["product"] = product_result.get("product_name") or None
+        det["product_nlp"] = product_result  # Full NLP analysis
+        
+        # Print method used
+        method = product_result.get("method", "unknown")
+        conf = product_result.get("confidence", 0.0)
+        print(f"done ({method}, conf={conf:.2f})")
 
     return to_result_record(image_path, detections_with_prices)
 

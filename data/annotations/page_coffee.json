@@ -1,0 +1,373 @@
+[
+  {
+    "image": "data\\images\\aldi\\page_coffee.png",
+    "items": [
+      {
+        "box": [
+          690,
+          678,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "6.29",
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_after_cleaning"
+        }
+      },
+      {
+        "box": [
+          690,
+          1729,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "7.79",
+        "product": "BARISSIMO UNSER BESTER CHARAKTERVOLL",
+        "product_nlp": {
+          "product_name": "BARISSIMO UNSER BESTER CHARAKTERVOLL",
+          "ocr_text": "BARISSIMO UNSER BESTER CHARAKTERVOLL & AROMATISCH . -. l. Ö7 K - Aa . BA",
+          "nlp_entities": [
+            {
+              "text": "AROMATISCH",
+              "label": "ORG",
+              "start": 39,
+              "end": 49
+            },
+            {
+              "text": "l. Ö7 K",
+              "label": "MISC",
+              "start": 55,
+              "end": 62
+            },
+            {
+              "text": "BA",
+              "label": "LOC",
+              "start": 70,
+              "end": 72
+            }
+          ],
+          "brands": [
+            "AROMATISCH",
+            "BARISSIMO",
+            "BESTER",
+            "CHARAKTERVOLL",
+            "UNSER"
+          ],
+          "quantities": [
+            {
+              "value": "7",
+              "unit": "K",
+              "full_text": "7 K"
+            }
+          ],
+          "noun_chunks": [
+            "BARISSIMO",
+            "UNSER",
+            "BESTER",
+            "CHARAKTERVOLL",
+            "AROMATISCH",
+            "Ö7 K",
+            "Aa",
+            "BA"
+          ],
+          "pos_filtered": "BARISSIMO UNSER BESTER CHARAKTERVOLL AROMATISCH Ö7 K Aa BA",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.9049787855774946,
+            "size_score": 0.16,
+            "stroke_width": 72.22417449951172,
+            "contrast": 1.0,
+            "density": 0.9049787855774946,
+            "is_title": true,
+            "confidence": 0.7519915142309979
+          }
+        }
+      },
+      {
+        "box": [
+          1716,
+          1749,
+          335,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "13.99",
+        "product": "WHOLE BEANS",
+        "product_nlp": {
+          "product_name": "WHOLE BEANS",
+          "ocr_text": "WHOLE BEANS 1000 ..- 09g RE Packung Zx28 . - BARISSIMO Espresso Cremoso .59 oder Caffe Gustoso Ganze Bohnen AL NN aÄmsusll ryqo LUNGO",
+          "nlp_entities": [
+            {
+              "text": "WHOLE",
+              "label": "MISC",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "text": "Espresso Cremoso .59",
+              "label": "PER",
+              "start": 55,
+              "end": 75
+            },
+            {
+              "text": "aÄmsusll",
+              "label": "MISC",
+              "start": 114,
+              "end": 122
+            },
+            {
+              "text": "LUNGO",
+              "label": "ORG",
+              "start": 128,
+              "end": 133
+            }
+          ],
+          "brands": [
+            "BARISSIMO",
+            "BEANS",
+            "Espresso",
+            "LUNGO",
+            "WHOLE"
+          ],
+          "quantities": [
+            {
+              "value": "09",
+              "unit": "g",
+              "full_text": "09g"
+            },
+            {
+              "value": "59",
+              "unit": "oder",
+              "full_text": "59 oder"
+            }
+          ],
+          "noun_chunks": [
+            "WHOLE",
+            "RE Packung Zx28",
+            "- BARISSIMO",
+            "Espresso Cremoso .59",
+            "Caffe Gustoso",
+            "AL NN",
+            "LUNGO"
+          ],
+          "pos_filtered": "WHOLE BEANS 1000 .. 09 Packung Zx28 BARISSIMO Espresso Cremoso .59 Caffe Gustoso Ganze Bohnen AL NN ryqo LUNGO",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.8963100420433828,
+            "size_score": 0.2,
+            "stroke_width": 140.4906005859375,
+            "contrast": 1.0,
+            "density": 0.8963100420433828,
+            "is_title": true,
+            "confidence": 0.7585240168173533
+          }
+        }
+      },
+      {
+        "box": [
+          1744,
+          2626,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "4.29",
+        "product": "DARKIS INU",
+        "product_nlp": {
+          "product_name": "DARKIS INU",
+          "ocr_text": "N . DARKIS INU A ESPRESSO m. RISTRETTO LUNGO n CREMA NR CoMPATIBLE S/12 3. ALUMINIUM . CAPSULES Ba W N An c DE A 11030 t ., BARISSIMO - , SR A",
+          "nlp_entities": [
+            {
+              "text": "DARKIS",
+              "label": "ORG",
+              "start": 4,
+              "end": 10
+            },
+            {
+              "text": "INU A",
+              "label": "MISC",
+              "start": 11,
+              "end": 16
+            },
+            {
+              "text": "CREMA",
+              "label": "ORG",
+              "start": 47,
+              "end": 52
+            },
+            {
+              "text": "CoMPATIBLE S/12",
+              "label": "MISC",
+              "start": 56,
+              "end": 71
+            },
+            {
+              "text": "ALUMINIUM",
+              "label": "ORG",
+              "start": 75,
+              "end": 84
+            },
+            {
+              "text": "CAPSULES",
+              "label": "ORG",
+              "start": 87,
+              "end": 95
+            },
+            {
+              "text": "BARISSIMO",
+              "label": "ORG",
+              "start": 124,
+              "end": 133
+            },
+            {
+              "text": "SR A",
+              "label": "ORG",
+              "start": 138,
+              "end": 142
+            }
+          ],
+          "brands": [
+            "ALUMINIUM",
+            "BARISSIMO",
+            "CAPSULES",
+            "CREMA",
+            "DARKIS",
+            "ESPRESSO",
+            "INU",
+            "LUNGO",
+            "RISTRETTO",
+            "SR A"
+          ],
+          "quantities": [
+            {
+              "value": "11030",
+              "unit": "t",
+              "full_text": "11030 t"
+            }
+          ],
+          "noun_chunks": [
+            "N",
+            "DARKIS INU",
+            "RISTRETTO",
+            "LUNGO",
+            "CREMA",
+            "NR CoMPATIBLE",
+            "12 3. ALUMINIUM",
+            "CAPSULES",
+            "Ba",
+            "BARISSIMO",
+            "- , SR"
+          ],
+          "pos_filtered": "N DARKIS INU RISTRETTO LUNGO CREMA NR CoMPATIBLE S 12 ALUMINIUM CAPSULES Ba N DE 11030 BARISSIMO SR",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.6389295033862337,
+            "size_score": 0.24,
+            "stroke_width": 39.23703384399414,
+            "contrast": 1.0,
+            "density": 0.6389295033862337,
+            "is_title": true,
+            "confidence": 0.6655718013544935
+          }
+        }
+      },
+      {
+        "box": [
+          1744,
+          3342,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "3.99",
+        "product": "BARISSIMO",
+        "product_nlp": {
+          "product_name": "BARISSIMO",
+          "ocr_text": "BARISSIMO x . cn . . OM r Kaffeekapseln rsTg Espressq Ristretto, 20 Plastik-Kapseln, 609 INTENSITY 02/12 104-g-Packung",
+          "nlp_entities": [
+            {
+              "text": "BARISSIMO",
+              "label": "ORG",
+              "start": 0,
+              "end": 9
+            },
+            {
+              "text": "cn",
+              "label": "MISC",
+              "start": 14,
+              "end": 16
+            },
+            {
+              "text": "Plastik-Kapseln",
+              "label": "LOC",
+              "start": 68,
+              "end": 83
+            }
+          ],
+          "brands": [
+            "BARISSIMO",
+            "INTENSITY"
+          ],
+          "quantities": [
+            {
+              "value": "20",
+              "unit": "Plastik",
+              "full_text": "20 Plastik"
+            },
+            {
+              "value": "609",
+              "unit": "INTENSITY",
+              "full_text": "609 INTENSITY"
+            },
+            {
+              "value": "20",
+              "unit": "Plastik-Kapseln",
+              "full_text": "20 Plastik-Kapseln"
+            },
+            {
+              "value": "12",
+              "unit": "104-g-Packung",
+              "full_text": "12 104-g-Packung"
+            }
+          ],
+          "noun_chunks": [
+            "BARISSIMO",
+            "cn",
+            "OM",
+            "r Kaffeekapseln",
+            "Espressq",
+            "Ristretto",
+            "20 Plastik-Kapseln",
+            "INTENSITY"
+          ],
+          "pos_filtered": "BARISSIMO . cn OM r Kaffeekapseln Espressq Ristretto 20 Plastik-Kapseln 609 INTENSITY 02 12 104-g-Packung",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.8317803842184647,
+            "size_score": 0.2,
+            "stroke_width": 49.02652359008789,
+            "contrast": 0.996078431372549,
+            "density": 0.8330368500556528,
+            "is_title": true,
+            "confidence": 0.7322495649769871
+          }
+        }
+      }
+    ]
+  }
+]

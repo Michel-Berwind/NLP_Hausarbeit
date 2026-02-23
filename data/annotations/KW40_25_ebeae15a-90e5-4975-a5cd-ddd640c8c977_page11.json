@@ -11,7 +11,85 @@
         ],
         "confidence": 1.0,
         "price": "4.99",
-        "product": "Hintergrund Kl-generi Arbeitshandschuh Überzug 100 Latex, Größen S-XXL, Versch. Farben, 100 Polyester"
+        "product": "TOPCRAFT Arbeitshandschuhe Hintergrund",
+        "product_nlp": {
+          "product_name": "TOPCRAFT Arbeitshandschuhe Hintergrund",
+          "ocr_text": "v .co , TOPCRAFT Arbeitshandschuhe Hintergrund Kl-gener Versch. Farben, 100 Polyester, Überzug 100 Latex, Größen S-XXL, je Paar . D / Weiteres",
+          "nlp_entities": [
+            {
+              "text": "TOPCRAFT",
+              "label": "ORG",
+              "start": 8,
+              "end": 16
+            },
+            {
+              "text": "S-XXL",
+              "label": "MISC",
+              "start": 113,
+              "end": 118
+            },
+            {
+              "text": "D /",
+              "label": "LOC",
+              "start": 130,
+              "end": 133
+            },
+            {
+              "text": "Weiteres",
+              "label": "PER",
+              "start": 134,
+              "end": 142
+            }
+          ],
+          "brands": [
+            "TOPCRAFT"
+          ],
+          "quantities": [
+            {
+              "value": "100",
+              "unit": "Polyester",
+              "full_text": "100 Polyester"
+            },
+            {
+              "value": "100",
+              "unit": "Latex",
+              "full_text": "100 Latex"
+            },
+            {
+              "value": "100",
+              "unit": "Polyester",
+              "full_text": "100 Polyester"
+            },
+            {
+              "value": "100",
+              "unit": "Latex",
+              "full_text": "100 Latex"
+            }
+          ],
+          "noun_chunks": [
+            "TOPCRAFT",
+            "Arbeitshandschuhe Hintergrund",
+            "Versch",
+            "Farben",
+            "100 Polyester",
+            "Überzug",
+            "Größen",
+            "je Paar",
+            "Weiteres"
+          ],
+          "pos_filtered": "TOPCRAFT Arbeitshandschuhe Hintergrund Kl-gener Versch Farben 100 Polyester Überzug 100 Latex Größen Paar Weiteres",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.546786631738199,
+            "size_score": 0.2,
+            "stroke_width": 45.03462219238281,
+            "contrast": 1.0,
+            "density": 0.546786631738199,
+            "is_title": true,
+            "confidence": 0.6187146526952796
+          }
+        }
       },
       {
         "box": [
@@ -22,7 +100,56 @@
         ],
         "confidence": 1.0,
         "price": "1.22",
-        "product": "ANWeiterelFarbeBäT OPGRÄEBITI i Fleecejacke LA M"
+        "product": "ALDI CD",
+        "product_nlp": {
+          "product_name": "ALDI CD",
+          "ocr_text": "VGL Modell IS- ....... ALDI CD wrann - Da &v HTS &IT 1913",
+          "nlp_entities": [
+            {
+              "text": "VGL Modell",
+              "label": "MISC",
+              "start": 0,
+              "end": 10
+            },
+            {
+              "text": "IS-",
+              "label": "ORG",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "text": "Da &v HTS &IT 1913",
+              "label": "MISC",
+              "start": 39,
+              "end": 57
+            }
+          ],
+          "brands": [
+            "ALDI",
+            "HTS",
+            "IS-",
+            "VGL"
+          ],
+          "quantities": [],
+          "noun_chunks": [
+            "VGL",
+            "ALDI",
+            "CD",
+            "IT"
+          ],
+          "pos_filtered": "VGL Modell ALDI CD v HTS IT 1913",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.7408772876798827,
+            "size_score": 0.24,
+            "stroke_width": 79.33973693847656,
+            "contrast": 1.0,
+            "density": 0.7408772876798827,
+            "is_title": true,
+            "confidence": 0.7063509150719531
+          }
+        }
       },
       {
         "box": [
@@ -33,7 +160,27 @@
         ],
         "confidence": 1.0,
         "price": "4.99",
-        "product": "kauft sein. Bekleidung teilweise nicht in allen Größen verfügbar. Alle Artikel ohne ung, dass diese Aktionsartikel im Unterschied zu unserem ständig vorhandenen Sc zur erfügung stehen. Sie können daher schon am Vormittag des ersten Aktionstag"
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "Versch. Des 60 Baum 40 Polyes Größen M- je Stück ung, dass diese Aktionsartikel im Unterschied zu unserem ständig vorhandenen Sc zur erfügung stehen. Sie können daher schon am Vormittag des ersten Aktionstag kauft sein. Bekleidung teilweise nicht in allen Größen verfügbar. Alle Artikel ohne",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.4343283582089552,
+            "size_score": 0.18,
+            "stroke_width": 36.670753479003906,
+            "contrast": 1.0,
+            "density": 0.4343283582089552,
+            "is_title": true,
+            "confidence": 0.5687313432835821
+          }
+        }
       },
       {
         "box": [
@@ -44,7 +191,27 @@
         ],
         "confidence": 1.0,
         "price": "9.99",
-        "product": "Aktionsbeginn ausverkauft sein. Bekleidung teilweise nicht in allen Größen verfügba Wir bitten um Beachtung, dass diese Aktionsartikel im Unterschied zu unserem stänc in begrenzter Anzahl zur erfügung stehen. Sie können daher schon am Vormittag de"
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "Farben, 77 Baumwolle, olyamid, Polyester, asthan, Größen 35/38-43/46 Wir bitten um Beachtung, dass diese Aktionsartikel im Unterschied zu unserem stänc in begrenzter Anzahl zur erfügung stehen. Sie können daher schon am Vormittag de Aktionsbeginn ausverkauft sein. Bekleidung teilweise nicht in allen Größen verfügba",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.4337339038428469,
+            "size_score": 0.31,
+            "stroke_width": 44.1766357421875,
+            "contrast": 1.0,
+            "density": 0.4337339038428469,
+            "is_title": true,
+            "confidence": 0.6009935615371388
+          }
+        }
       },
       {
         "box": [
@@ -55,7 +222,71 @@
         ],
         "confidence": 1.0,
         "price": "2.99",
-        "product": "Erwachsene, jeweils Einheitsgröße, je Stüc recycelt , 46 Polyacryl, für Kinder oder Versch. Modelle, 54 Polyester"
+        "product": "ATHLITIE DEr",
+        "product_nlp": {
+          "product_name": "ATHLITIE DEr",
+          "ocr_text": "Versch. Farben, 100 Polyester, Überzug 100 Latex, Größen S-XXL, je Paar Weiteres Modell Ver ATHLITIE DEr",
+          "nlp_entities": [
+            {
+              "text": "Versch",
+              "label": "PER",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "text": "S-XXL",
+              "label": "MISC",
+              "start": 57,
+              "end": 62
+            }
+          ],
+          "brands": [
+            "ATHLITIE"
+          ],
+          "quantities": [
+            {
+              "value": "100",
+              "unit": "Polyester",
+              "full_text": "100 Polyester"
+            },
+            {
+              "value": "100",
+              "unit": "Latex",
+              "full_text": "100 Latex"
+            },
+            {
+              "value": "100",
+              "unit": "Polyester",
+              "full_text": "100 Polyester"
+            },
+            {
+              "value": "100",
+              "unit": "Latex",
+              "full_text": "100 Latex"
+            }
+          ],
+          "noun_chunks": [
+            "Farben",
+            "100 Polyester",
+            "Überzug",
+            "Größen",
+            "Paar",
+            "Ver ATHLITIE",
+            "DEr"
+          ],
+          "pos_filtered": "Farben 100 Polyester Überzug 100 Latex Größen Paar Weiteres Modell Ver ATHLITIE DEr",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.45806076269732326,
+            "size_score": 0.26,
+            "stroke_width": 26.645984649658203,
+            "contrast": 1.0,
+            "density": 0.45806076269732326,
+            "is_title": true,
+            "confidence": 0.5982243050789293
+          }
+        }
       },
       {
         "box": [
@@ -66,7 +297,18 @@
         ],
         "confidence": 1.0,
         "price": "16.99",
-        "product": "Varscn rarnen PDa mwAalle . DA . Verech Fsärhen 77 Baumiwalle .5 NTT A, /// D"
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_after_cleaning"
+        }
       }
     ]
   }

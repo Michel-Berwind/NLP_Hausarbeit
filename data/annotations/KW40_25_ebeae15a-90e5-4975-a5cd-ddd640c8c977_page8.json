@@ -1,0 +1,391 @@
+[
+  {
+    "image": "data\\images\\aldi\\KW40_25_ebeae15a-90e5-4975-a5cd-ddd640c8c977_page8.png",
+    "items": [
+      {
+        "box": [
+          1736,
+          623,
+          342,
+          369
+        ],
+        "confidence": 1.0,
+        "price": "7.99",
+        "product": "FORCE anks",
+        "product_nlp": {
+          "product_name": "FORCE anks",
+          "ocr_text": "K z Fensterwischer Zusätzlich geeignet zum Absaugen von gdyenaeER DUU OR UNKMEMEEENNIND Fensterscheiben iniger POWER FORCE anks für Frisch- 9 Profi-Müllsäcke ischwassertank Besonders reißfest, flüssigkeits- m, Maße dicht, Fassungsvermögen je ca. antie, je Stück 120 I, Maße je ca. 70 110 cm -generiert . - -1zc .c.. A",
+          "nlp_entities": [
+            {
+              "text": "gdyenaeER DUU OR",
+              "label": "ORG",
+              "start": 56,
+              "end": 72
+            },
+            {
+              "text": "FORCE",
+              "label": "MISC",
+              "start": 117,
+              "end": 122
+            }
+          ],
+          "brands": [
+            "DUU",
+            "FORCE",
+            "POWER",
+            "UNKMEMEEENNIND",
+            "gdyenaeER DUU OR"
+          ],
+          "quantities": [
+            {
+              "value": "9",
+              "unit": "Profi",
+              "full_text": "9 Profi"
+            },
+            {
+              "value": "120",
+              "unit": "I",
+              "full_text": "120 I"
+            },
+            {
+              "value": "110",
+              "unit": "cm",
+              "full_text": "110 cm"
+            },
+            {
+              "value": "1",
+              "unit": "zc",
+              "full_text": "1zc"
+            },
+            {
+              "value": "gdyenaeER",
+              "unit": "DUU",
+              "full_text": "gdyenaeER DUU"
+            },
+            {
+              "value": "9",
+              "unit": "Profi-Müllsäcke",
+              "full_text": "9 Profi-Müllsäcke"
+            }
+          ],
+          "noun_chunks": [
+            "K",
+            "z Fensterwischer",
+            "Absaugen",
+            "gdyenaeER DUU OR",
+            "UNKMEMEEENNIND",
+            "iniger POWER",
+            "FORCE anks",
+            "Frisch- 9 Profi-Müllsäcke",
+            "Maße",
+            "Fassungsvermögen je ca. antie",
+            "je Stück",
+            "Maße"
+          ],
+          "pos_filtered": "K z Fensterwischer Absaugen gdyenaeER DUU OR UNKMEMEEENNIND Fensterscheiben iniger POWER FORCE anks 9 Profi-Müllsäcke ischwassertank Maße Fassungsvermögen antie Stück 120 I Maße 70 110 -generiert .c",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.29769647696476964,
+            "size_score": 0.4,
+            "stroke_width": 29.750070571899414,
+            "contrast": 1.0,
+            "density": 0.29769647696476964,
+            "is_title": true,
+            "confidence": 0.5690785907859078
+          }
+        }
+      },
+      {
+        "box": [
+          806,
+          744,
+          384,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "69.99",
+        "product": "llllrlt ll",
+        "product_nlp": {
+          "product_name": "llllrlt ll",
+          "ocr_text": "llllrlt ll lmmmNuu zetttttbt fi ff . AMBIANO Teppich- und Polsterreiniger Leistung max. 750 W, Wassertanks für Frisch- und Schmutzwasser, Kapazität Frischwassertank ca. 1080 ml, Netzkabellänge ca. m, Maße ca. 32 24 35 cm, Jahre Garantie, je Stück Kl-generiert en PFL4 Ne N",
+          "nlp_entities": [
+            {
+              "text": "llllrlt ll lmmmNuu zetttttbt",
+              "label": "MISC",
+              "start": 0,
+              "end": 28
+            },
+            {
+              "text": "AMBIANO Teppich- und Polsterreiniger",
+              "label": "ORG",
+              "start": 37,
+              "end": 73
+            },
+            {
+              "text": "Stück Kl-generiert",
+              "label": "PER",
+              "start": 241,
+              "end": 259
+            }
+          ],
+          "brands": [
+            "AMBIANO",
+            "AMBIANO Teppich- und Polsterreiniger"
+          ],
+          "quantities": [
+            {
+              "value": "750",
+              "unit": "W",
+              "full_text": "750 W"
+            },
+            {
+              "value": "1080",
+              "unit": "ml",
+              "full_text": "1080 ml"
+            },
+            {
+              "value": "35",
+              "unit": "cm",
+              "full_text": "35 cm"
+            },
+            {
+              "value": "4",
+              "unit": "Ne",
+              "full_text": "4 Ne"
+            }
+          ],
+          "noun_chunks": [
+            "llllrlt",
+            "fi",
+            "AMBIANO Teppich- und Polsterreiniger Leistung",
+            "Wassertanks",
+            "Frisch- und Schmutzwasser",
+            "Kapazität",
+            "Frischwassertank",
+            "Netzkabellänge",
+            "Maße",
+            "Jahre Garantie",
+            "Stück",
+            "N"
+          ],
+          "pos_filtered": "llllrlt ll lmmmNuu fi AMBIANO Polsterreiniger Leistung 750 Wassertanks Schmutzwasser Kapazität Frischwassertank 1080 Netzkabellänge m Maße 32 24 35 Jahre Garantie Stück N",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.15566121517672937,
+            "size_score": 0.4,
+            "stroke_width": 18.70117950439453,
+            "contrast": 1.0,
+            "density": 0.181489446435683,
+            "is_title": true,
+            "confidence": 0.5148473091965872
+          }
+        }
+      },
+      {
+        "box": [
+          704,
+          1995,
+          342,
+          369
+        ],
+        "confidence": 1.0,
+        "price": "2.99",
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "Weitere Farben N / - / S Fairtrade-Rosen Versch. Farben, je 10 Stiele, Länge ca. 40 cm, je Bund An Weitere Sorten",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.267068502805358,
+            "size_score": 0.38,
+            "stroke_width": 23.047870635986328,
+            "contrast": 1.0,
+            "density": 0.3190888024822277,
+            "is_title": true,
+            "confidence": 0.5570294310898302
+          }
+        }
+      },
+      {
+        "box": [
+          1733,
+          2031,
+          345,
+          249
+        ],
+        "confidence": 1.0,
+        "price": "7.99",
+        "product": "P ngstrose",
+        "product_nlp": {
+          "product_name": "P ngstrose",
+          "ocr_text": "P ngstrose chu Nt Tulpen, 15 Stück",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [
+            {
+              "value": "15",
+              "unit": "Stück",
+              "full_text": "15 Stück"
+            },
+            {
+              "value": "15",
+              "unit": "Stück",
+              "full_text": "15 Stück"
+            }
+          ],
+          "noun_chunks": [
+            "P",
+            "Nt Tulpen",
+            "15 Stück"
+          ],
+          "pos_filtered": "P ngstrose Tulpen 15 Stück",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.35156815701023464,
+            "size_score": 0.2,
+            "stroke_width": 15.908169746398926,
+            "contrast": 0.996078431372549,
+            "density": 0.35543154335100646,
+            "is_title": true,
+            "confidence": 0.5404253661440535
+          }
+        }
+      },
+      {
+        "box": [
+          705,
+          3221,
+          343,
+          369
+        ],
+        "confidence": 1.0,
+        "price": "4.99",
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "FAIRTRADE SEL . . ,l A - ö i / - - 7 / Rr Wir bitten um Beachtun dass diese Aktionsartikel im in begrenzter Anzahl zur erfüguna stehen. Sie können Aktionsbeginn ausverkauft sein. Alle Artikel ohne Deko",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.39962025163611775,
+            "size_score": 0.18,
+            "stroke_width": 21.784080505371094,
+            "contrast": 1.0,
+            "density": 0.40003565730309915,
+            "is_title": true,
+            "confidence": 0.5548896412211453
+          }
+        }
+      },
+      {
+        "box": [
+          1733,
+          3342,
+          345,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "1.19",
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "D DAa Kl farbenfroh aufeinander Al abgestimmt, je Bund x a GARDENLINE läf Herbstgarten x Versch. Sorten, z. B. Calluna Beauty fg Ladies , im ca. 9,5-cm-Kulturtopf, je Stück tionsartikel im Unterschied zu unserem ständig vorhandenen Sortiment nur en. Sie können daher schon am Vormittag des ersten Aktionstages kurz nach Gutes ikel ohne Dekoration",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.40022028228767237,
+            "size_score": 0.38,
+            "stroke_width": 33.641395568847656,
+            "contrast": 1.0,
+            "density": 0.4007761437908497,
+            "is_title": true,
+            "confidence": 0.6051436990653867
+          }
+        }
+      },
+      {
+        "box": [
+          1318,
+          1291,
+          217,
+          165
+        ],
+        "confidence": 1.0,
+        "price": "4.01",
+        "product": "je ca. 70 110 cm c-nc",
+        "product_nlp": {
+          "product_name": "je ca. 70 110 cm c-nc",
+          "ocr_text": "DEeSONUCIS TENICSL, USSIgKEI dicht, Fassungsvermögen je ca. 120 I, Maße je ca. 70 110 cm c-nc. . - . f",
+          "nlp_entities": [
+            {
+              "text": "TENICSL",
+              "label": "MISC",
+              "start": 11,
+              "end": 18
+            },
+            {
+              "text": "f",
+              "label": "LOC",
+              "start": 101,
+              "end": 102
+            }
+          ],
+          "brands": [
+            "TENICSL"
+          ],
+          "quantities": [
+            {
+              "value": "120",
+              "unit": "I",
+              "full_text": "120 I"
+            },
+            {
+              "value": "110",
+              "unit": "cm",
+              "full_text": "110 cm"
+            }
+          ],
+          "noun_chunks": [
+            "TENICSL",
+            "USSIgKEI",
+            "Fassungsvermögen",
+            "Maße",
+            "je ca. 70 110 cm c-nc",
+            "f"
+          ],
+          "pos_filtered": "TENICSL USSIgKEI Fassungsvermögen 120 I Maße 70 110 c-nc f",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.12665969083586867,
+            "size_score": 0.36,
+            "stroke_width": 10.287745475769043,
+            "contrast": 1.0,
+            "density": 0.129889628307093,
+            "is_title": true,
+            "confidence": 0.4909868700814699
+          }
+        }
+      }
+    ]
+  }
+]

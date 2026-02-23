@@ -11,7 +11,96 @@
         ],
         "confidence": 1.0,
         "price": "3.99",
-        "product": "IJ.II ÄAAMV VHMEU.VIFON . l..s.. . a.i.v. SE AF wa S"
+        "product": "UP2FASHION Kuschel-Socken P",
+        "product_nlp": {
+          "product_name": "UP2FASHION Kuschel-Socken P",
+          "ocr_text": "ab Mo. 29. UP2FASHION Kuschel-Socken P, Versch. Designs, 84 Poly- acryl, 10 Polyamid, / Wolle, Elasthan, Größen 35/38, 39/42",
+          "nlp_entities": [
+            {
+              "text": "UP2FASHION Kuschel-Socken P",
+              "label": "LOC",
+              "start": 11,
+              "end": 38
+            },
+            {
+              "text": "Versch",
+              "label": "LOC",
+              "start": 40,
+              "end": 46
+            },
+            {
+              "text": "Designs",
+              "label": "LOC",
+              "start": 48,
+              "end": 55
+            },
+            {
+              "text": "acryl",
+              "label": "LOC",
+              "start": 66,
+              "end": 71
+            },
+            {
+              "text": "Polyamid",
+              "label": "LOC",
+              "start": 76,
+              "end": 84
+            },
+            {
+              "text": "Wolle",
+              "label": "LOC",
+              "start": 88,
+              "end": 93
+            },
+            {
+              "text": "Elasthan",
+              "label": "LOC",
+              "start": 95,
+              "end": 103
+            }
+          ],
+          "brands": [],
+          "quantities": [
+            {
+              "value": "2",
+              "unit": "FASHION",
+              "full_text": "2FASHION"
+            },
+            {
+              "value": "84",
+              "unit": "Poly",
+              "full_text": "84 Poly"
+            },
+            {
+              "value": "10",
+              "unit": "Polyamid",
+              "full_text": "10 Polyamid"
+            }
+          ],
+          "noun_chunks": [
+            "Mo. 29. UP2FASHION",
+            "Kuschel-Socken P",
+            "Versch",
+            "Designs",
+            "84 Poly- acryl",
+            "10 Polyamid",
+            "Wolle",
+            "Elasthan",
+            "Größen"
+          ],
+          "pos_filtered": "Mo. 29. UP2FASHION Kuschel-Socken P Versch Designs 84 acryl 10 Polyamid Wolle Elasthan Größen 35 38 39 42",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.3287987720816902,
+            "size_score": 0.44,
+            "stroke_width": 57.409637451171875,
+            "contrast": 1.0,
+            "density": 0.3287987720816902,
+            "is_title": true,
+            "confidence": 0.591519508832676
+          }
+        }
       },
       {
         "box": [
@@ -22,7 +111,79 @@
         ],
         "confidence": 1.0,
         "price": "1.99",
-        "product": "RE xi . / an - ra Passt perfekt ....Üs DEa W mmn. mnr nm w/. . . nr"
+        "product": "Sa LT - aCH",
+        "product_nlp": {
+          "product_name": "Sa LT - aCH",
+          "ocr_text": "A IA - , 154 N l .- II M . 11 asst perrekt BV zusammen Sa LT - aCH ,J - La mi l",
+          "nlp_entities": [
+            {
+              "text": "A IA",
+              "label": "MISC",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "text": "BV",
+              "label": "MISC",
+              "start": 43,
+              "end": 45
+            },
+            {
+              "text": "Sa LT - aCH",
+              "label": "ORG",
+              "start": 55,
+              "end": 66
+            },
+            {
+              "text": "J",
+              "label": "MISC",
+              "start": 68,
+              "end": 69
+            },
+            {
+              "text": "La mi l",
+              "label": "LOC",
+              "start": 72,
+              "end": 79
+            }
+          ],
+          "brands": [
+            "Sa LT - aCH"
+          ],
+          "quantities": [
+            {
+              "value": "154",
+              "unit": "N",
+              "full_text": "154 N"
+            },
+            {
+              "value": "11",
+              "unit": "asst",
+              "full_text": "11 asst"
+            }
+          ],
+          "noun_chunks": [
+            "A IA",
+            "N l .-",
+            "11 asst",
+            "perrekt BV",
+            "LT",
+            "aCH",
+            "J"
+          ],
+          "pos_filtered": "IA 154 N l .- II M 11 asst BV Sa LT aCH J La l",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.486745712632124,
+            "size_score": 0.34,
+            "stroke_width": 134.3273162841797,
+            "contrast": 1.0,
+            "density": 0.486745712632124,
+            "is_title": true,
+            "confidence": 0.6296982850528496
+          }
+        }
       },
       {
         "box": [
@@ -33,7 +194,27 @@
         ],
         "confidence": 1.0,
         "price": "1.79",
-        "product": "in allen Größen verfüggbar. Alle Artikel ohne ekoration. Gutes für al er schon am Vormittag des ersten Aktionstages kurz nac ersch ed zu r serem städndig vorha2c enen Sortim ent nur 1"
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "LINE / oflanze im Korb Sorten, z. B. Yucca, 0-cm-Korb, Höhe 30 cm, je Stück / arschied zu unserem ständig vorhaxdenen Sortiment nur ar schon am Vormittag des ersten Aktionstages kurz nach in allen Größen verfüggbar. Alle Artikel ohnegDekoration. Gutes für al",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.529854193954532,
+            "size_score": 0.38,
+            "stroke_width": 60.987640380859375,
+            "contrast": 1.0,
+            "density": 0.529854193954532,
+            "is_title": true,
+            "confidence": 0.6569416775818128
+          }
+        }
       },
       {
         "box": [
@@ -44,7 +225,82 @@
         ],
         "confidence": 1.0,
         "price": "14.99",
-        "product": "in. Bekleidung teilweise nicht in allen Größen verfügbar. Alle Artikel ohnegDek ss diese Aktionsartikel im Unterschied zu unserem ständig vorhandenen Sortim ügung stehen. Sie können daher schon am Vormittag des ersten Aktionstages k"
+        "product": "I AF Bogenhanf",
+        "product_nlp": {
+          "product_name": "I AF Bogenhanf",
+          "ocr_text": "I AF Bogenhanf, Mg l/ A ZENS GARDENLINE Grünpflanze im Korb Versch. Sorten, z. B. Yucca, im ca. 20-cm-Korb, Höhe TE ca. /5-80 cm, je Stück",
+          "nlp_entities": [
+            {
+              "text": "I AF Bogenhanf",
+              "label": "PER",
+              "start": 0,
+              "end": 14
+            },
+            {
+              "text": "Mg l/ A",
+              "label": "MISC",
+              "start": 16,
+              "end": 23
+            },
+            {
+              "text": "ZENS",
+              "label": "ORG",
+              "start": 24,
+              "end": 28
+            },
+            {
+              "text": "GARDENLINE",
+              "label": "ORG",
+              "start": 29,
+              "end": 39
+            },
+            {
+              "text": "B. Yucca",
+              "label": "PER",
+              "start": 79,
+              "end": 87
+            },
+            {
+              "text": "TE",
+              "label": "LOC",
+              "start": 113,
+              "end": 115
+            }
+          ],
+          "brands": [
+            "GARDENLINE",
+            "ZENS"
+          ],
+          "quantities": [
+            {
+              "value": "80",
+              "unit": "cm",
+              "full_text": "80 cm"
+            }
+          ],
+          "noun_chunks": [
+            "I AF Bogenhanf",
+            "Mg l/",
+            "GARDENLINE Grünpflanze",
+            "Korb Versch",
+            "Sorten",
+            "B.",
+            "Höhe TE",
+            "Stück"
+          ],
+          "pos_filtered": "I AF Bogenhanf Mg l / Grünpflanze Korb Versch Sorten B. Yucca 20-cm-Korb Höhe TE 80 Stück",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.28003850322645696,
+            "size_score": 0.4,
+            "stroke_width": 30.306669235229492,
+            "contrast": 1.0,
+            "density": 0.28003850322645696,
+            "is_title": true,
+            "confidence": 0.5620154012905828
+          }
+        }
       }
     ]
   }

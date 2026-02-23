@@ -2,3 +2,5 @@
 numpy
 opencv-python
 pytesseract
+spacy>=3.0.0
+python-pptx

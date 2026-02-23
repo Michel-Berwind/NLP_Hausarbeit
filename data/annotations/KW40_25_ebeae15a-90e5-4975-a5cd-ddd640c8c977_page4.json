@@ -1,0 +1,348 @@
+[
+  {
+    "image": "data\\images\\aldi\\KW40_25_ebeae15a-90e5-4975-a5cd-ddd640c8c977_page4.png",
+    "items": [
+      {
+        "box": [
+          691,
+          779,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "2.99",
+        "product": "XMXAL Cgehep NATURWEISS",
+        "product_nlp": {
+          "product_name": "XMXAL Cgehep NATURWEISS",
+          "ocr_text": "XXL XXL XMXAL Cgehep NATURWEISS MIT FRISCHEM . DUFT, KLÜMPCHENBILDEND KATZEN REU",
+          "nlp_entities": [
+            {
+              "text": "XXL",
+              "label": "MISC",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "text": "FRISCHEM",
+              "label": "MISC",
+              "start": 36,
+              "end": 44
+            },
+            {
+              "text": "DUFT",
+              "label": "MISC",
+              "start": 47,
+              "end": 51
+            },
+            {
+              "text": "KLÜMPCHENBILDEND KATZEN",
+              "label": "ORG",
+              "start": 53,
+              "end": 76
+            }
+          ],
+          "brands": [
+            "DUFT",
+            "FRISCHEM",
+            "KATZEN",
+            "KLÜMPCHENBILDEND",
+            "KLÜMPCHENBILDEND KATZEN",
+            "MIT",
+            "NATURWEISS",
+            "REU",
+            "XMXAL",
+            "XXL"
+          ],
+          "quantities": [],
+          "noun_chunks": [
+            "XXL",
+            "XXL",
+            "XMXAL",
+            "Cgehep NATURWEISS",
+            "FRISCHEM",
+            "DUFT",
+            "KLÜMPCHENBILDEND KATZEN",
+            "REU"
+          ],
+          "pos_filtered": "XXL XXL XMXAL Cgehep NATURWEISS FRISCHEM DUFT KLÜMPCHENBILDEND KATZEN REU",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.37988482326698697,
+            "size_score": 0.34,
+            "stroke_width": 22.74468231201172,
+            "contrast": 1.0,
+            "density": 0.4435922159887798,
+            "is_title": true,
+            "confidence": 0.593324668578974
+          }
+        }
+      },
+      {
+        "box": [
+          691,
+          1653,
+          307,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "2.99",
+        "product": "Die Martin Rütter Kaustange Rind",
+        "product_nlp": {
+          "product_name": "Die Martin Rütter Kaustange Rind",
+          "ocr_text": "Die Martin Rütter Kaustange Rind vLachsöl n 4 Gesund, Lecker, ,/ 3A Vom Hundeprofi, 100 . C be obne künstliche Zuktae, odme Fla . , JAr .. l . . , il 34 fi N ID -3 . - - . . . .., - XKXL XL XXL XXL",
+          "nlp_entities": [
+            {
+              "text": "Martin Rütter Kaustange",
+              "label": "MISC",
+              "start": 4,
+              "end": 27
+            },
+            {
+              "text": "Rind vLachsöl n 4",
+              "label": "MISC",
+              "start": 28,
+              "end": 45
+            },
+            {
+              "text": "JAr .. l .",
+              "label": "MISC",
+              "start": 132,
+              "end": 142
+            },
+            {
+              "text": "il 34 fi N ID",
+              "label": "LOC",
+              "start": 147,
+              "end": 160
+            },
+            {
+              "text": "XKXL XL",
+              "label": "MISC",
+              "start": 182,
+              "end": 189
+            }
+          ],
+          "brands": [
+            "XKXL",
+            "XXL"
+          ],
+          "quantities": [
+            {
+              "value": "4",
+              "unit": "Gesund",
+              "full_text": "4 Gesund"
+            },
+            {
+              "value": "3",
+              "unit": "A",
+              "full_text": "3A"
+            },
+            {
+              "value": "34",
+              "unit": "fi",
+              "full_text": "34 fi"
+            },
+            {
+              "value": "4",
+              "unit": "Gesund",
+              "full_text": "4 Gesund"
+            }
+          ],
+          "noun_chunks": [
+            "Die Martin Rütter Kaustange Rind",
+            "Gesund",
+            "Lecker",
+            "3A",
+            "Hundeprofi",
+            "C",
+            "be obne künstliche Zuktae",
+            "Fla",
+            ", JAr .. l",
+            ", il",
+            ".., - XKXL XL",
+            "XXL XXL"
+          ],
+          "pos_filtered": "Martin Rütter Kaustange Rind vLachsöl 4 Gesund Lecker 3A Hundeprofi 100 C künstliche Zuktae Fla JAr .. l . il 34 -3 XKXL XL XXL XXL",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.20693357510975377,
+            "size_score": 0.26,
+            "stroke_width": 14.766170501708984,
+            "contrast": 0.9686274509803922,
+            "density": 0.25296039199673337,
+            "is_title": true,
+            "confidence": 0.49767022937965827
+          }
+        }
+      },
+      {
+        "box": [
+          1772,
+          2163,
+          308,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "1.49",
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_after_cleaning"
+        }
+      },
+      {
+        "box": [
+          691,
+          2378,
+          342,
+          369
+        ],
+        "confidence": 1.0,
+        "price": "5.99",
+        "product": "RUMNSUHLIIG Lachsöl Rind /usätze",
+        "product_nlp": {
+          "product_name": "RUMNSUHLIIG Lachsöl Rind /usätze",
+          "ocr_text": "VE RUMNSUHLIIG Lachsöl Rind /usätze und Konservie- rungsmittel, je 100-g- Lecker. deprofl, lOOq Yurndtre ohn mn. flr - ROMEO .sv... KXL XXL Premium-Filets Versch. Sorten 900-g-Packung, XXL",
+          "nlp_entities": [
+            {
+              "text": "lOOq Yurndtre ohn mn",
+              "label": "PER",
+              "start": 91,
+              "end": 111
+            },
+            {
+              "text": "ROMEO .sv",
+              "label": "MISC",
+              "start": 119,
+              "end": 128
+            },
+            {
+              "text": "KXL",
+              "label": "ORG",
+              "start": 132,
+              "end": 135
+            },
+            {
+              "text": "XXL Premium-Filets Versch",
+              "label": "ORG",
+              "start": 136,
+              "end": 161
+            },
+            {
+              "text": "XXL",
+              "label": "MISC",
+              "start": 185,
+              "end": 188
+            }
+          ],
+          "brands": [
+            "KXL",
+            "ROMEO",
+            "RUMNSUHLIIG",
+            "XXL",
+            "XXL Premium-Filets Versch"
+          ],
+          "quantities": [],
+          "noun_chunks": [
+            "VE",
+            "RUMNSUHLIIG",
+            "Lachsöl Rind /usätze",
+            "Konservie- rungsmittel",
+            "Lecker",
+            "deprofl",
+            "lOOq Yurndtre",
+            "flr",
+            "- ROMEO",
+            "KXL",
+            "XXL Premium-Filets",
+            "Sorten 900-g-Packung",
+            "XXL"
+          ],
+          "pos_filtered": "VE RUMNSUHLIIG Lachsöl Rind /usätze rungsmittel Lecker deprofl lOOq Yurndtre flr ROMEO KXL XXL Premium-Filets Versch Sorten 900-g-Packung XXL",
+          "confidence": 1.0,
+          "method": "nlp",
+          "visual_quality": {
+            "boldness": 0.23909625886948896,
+            "size_score": 0.28,
+            "stroke_width": 26.06411361694336,
+            "contrast": 1.0,
+            "density": 0.23909625886948896,
+            "is_title": true,
+            "confidence": 0.5156385035477956
+          }
+        }
+      },
+      {
+        "box": [
+          693,
+          3342,
+          308,
+          248
+        ],
+        "confidence": 1.0,
+        "price": "3.99",
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "ya Wir bitten um Beachtung, dass diese Aktionsartikel in begrenzter Anzahl zur erfügun stehen. Sie könne Aktionsbeginn ausverkauft sein. Artikel ohne Dek",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.3368764294101522,
+            "size_score": 0.26,
+            "stroke_width": 24.586528778076172,
+            "contrast": 1.0,
+            "density": 0.33734431333988857,
+            "is_title": true,
+            "confidence": 0.5497973601570346
+          }
+        }
+      },
+      {
+        "box": [
+          1770,
+          3340,
+          308,
+          249
+        ],
+        "confidence": 1.0,
+        "price": "9.99",
+        "product": null,
+        "product_nlp": {
+          "product_name": "",
+          "ocr_text": "o IN D UB &1 Versch. Farben, 17 Rollen Maße ca. 28x 29 25 cm 15 Beutel, Material Pa Kunststoff, Maße je ca. R 32 22 cm, je Packung / Maße ca. 32,5 17 20 cm nterschied zu unserem ständig vorhandenen Sortiment nur daher schon am Vormittag des ersten Aktionstages kurz nach ation. Gutes für",
+          "nlp_entities": [],
+          "brands": [],
+          "quantities": [],
+          "noun_chunks": [],
+          "pos_filtered": "",
+          "confidence": 0.0,
+          "method": "rejected_by_nlp",
+          "visual_quality": {
+            "boldness": 0.40661398211046607,
+            "size_score": 0.32,
+            "stroke_width": 33.089908599853516,
+            "contrast": 1.0,
+            "density": 0.40717638042597154,
+            "is_title": true,
+            "confidence": 0.5927018326757371
+          }
+        }
+      }
+    ]
+  }
+]
