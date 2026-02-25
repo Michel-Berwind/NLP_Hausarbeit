@@ -1,0 +1,29 @@
+{
+  "page_id": "aldi_page09",
+  "offers": [
+    {
+      "product": "FERREX Elektro-Hochdruckreiniger",
+      "price": "39.99"
+    },
+    {
+      "product": "tesa Powerstrips",
+      "price": "4.99"
+    },
+    {
+      "product": "HOME CREATION Kokos-Fußmatte mit Rahmen",
+      "price": "4.99"
+    },
+    {
+      "product": "GARDENLINE Bio-Staude oder Gartenpflanze",
+      "price": "1.49"
+    },
+    {
+      "product": "GARDENLINE Frühjahrsblüher",
+      "price": "1.99"
+    },
+    {
+      "product": "GARDENLINE Premium-Gemüsepflanzen",
+      "price": "1.49"
+    }
+  ]
+}

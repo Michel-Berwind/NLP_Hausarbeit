@@ -1,0 +1,14 @@
+[project]
+name = "nlp-hausarbeit"
+version = "0.1.0"
+description = "Flyer product and price extraction pipeline"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "numpy",
+  "opencv-python",
+  "pytesseract",
+  "easyocr",
+  "spacy>=3.0.0",
+  "pdf2image",
+  "rapidfuzz",
+]

@@ -1,0 +1,25 @@
+{
+  "page_id": "aldi_page01",
+  "offers": [
+    {
+      "product": "Fahrradschloss",
+      "price": "4.99"
+    },
+    {
+      "product": "Fahrrad-Spiralkabelschloss",
+      "price": "2.99"
+    },
+    {
+      "product": "LED-Premium-Fahrradlampen",
+      "price": "12.99"
+    },
+    {
+      "product": "Fahrrad-Zubehör",
+      "price": "5.99"
+    },
+    {
+      "product": "Speichenreflektoren",
+      "price": "3.99"
+    }
+  ]
+}

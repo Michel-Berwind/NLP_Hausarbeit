@@ -1,0 +1,29 @@
+{
+  "page_id": "aldi_page08",
+  "offers": [
+    {
+      "product": "UP2FASHION T-Shirt (2er-Set)",
+      "price": "6.99"
+    },
+    {
+      "product": "UP2FASHION Leggings",
+      "price": "3.59"
+    },
+    {
+      "product": "UP2FASHION Längerärmiger Body",
+      "price": "8.99"
+    },
+    {
+      "product": "UP2FASHION Loungewear-Jacke",
+      "price": "12.99"
+    },
+    {
+      "product": "UP2FASHION Loungewear-Hose",
+      "price": "9.99"
+    },
+    {
+      "product": "UP2FASHION Homewear",
+      "price": "7.99"
+    }
+  ]
+}

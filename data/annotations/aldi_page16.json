@@ -1,0 +1,37 @@
+{
+  "page_id": "aldi_page16",
+  "offers": [
+    {
+      "product": "MOSER ROTH Osterhase",
+      "price": "1.99"
+    },
+    {
+      "product": "MOSER ROTH Mini-Osterhase",
+      "price": "0.69"
+    },
+    {
+      "product": "OSTER PHANTASIE Schoko-Häschen",
+      "price": "0.99"
+    },
+    {
+      "product": "OSTER PHANTASIE Gefüllte Eier",
+      "price": "1.11"
+    },
+    {
+      "product": "MOSER ROTH Mini-Ostereier oder Feine Ostereier",
+      "price": "2.19"
+    },
+    {
+      "product": "OSTER PHANTASIE Edelmarzipan-Pasteten-Ei",
+      "price": "1.11"
+    },
+    {
+      "product": "OSTER PHANTASIE Fein gefüllte Waffel-Eier",
+      "price": "1.59"
+    },
+    {
+      "product": "OSTER PHANTASIE Mini-Osterschokofiguren",
+      "price": "1.49"
+    }
+  ]
+}

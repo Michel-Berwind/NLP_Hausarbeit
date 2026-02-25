@@ -1,0 +1,29 @@
+{
+  "page_id": "aldi_page06",
+  "offers": [
+    {
+      "product": "WORKZONE Messwerkzeug",
+      "price": "3.49"
+    },
+    {
+      "product": "WORKZONE Aufbewahrungsbox(en)",
+      "price": "7.99"
+    },
+    {
+      "product": "WORKZONE Alu-Teleskopleiter",
+      "price": "79.99"
+    },
+    {
+      "product": "WORKZONE Möbeltransport-Set",
+      "price": "9.99"
+    },
+    {
+      "product": "WORKZONE Verlängerungskabel",
+      "price": "9.99"
+    },
+    {
+      "product": "WORKZONE LED-Akku-Arbeitsstrahler",
+      "price": "9.99"
+    }
+  ]
+}

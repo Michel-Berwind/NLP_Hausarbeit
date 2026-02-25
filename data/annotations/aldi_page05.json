@@ -1,0 +1,37 @@
+{
+  "page_id": "aldi_page05",
+  "offers": [
+    {
+      "product": "ACTIV ENERGY Batterien AA oder AAA",
+      "price": "2.99"
+    },
+    {
+      "product": "LILY & DAN Funktionshose",
+      "price": "6.99"
+    },
+    {
+      "product": "TOPCRAFT Arbeitshemd",
+      "price": "12.99"
+    },
+    {
+      "product": "TOPCRAFT Arbeitslatzhose",
+      "price": "16.99"
+    },
+    {
+      "product": "WORKZONE Steckdosenadapter mit USB",
+      "price": "6.99"
+    },
+    {
+      "product": "WORKZONE 4-fach-Steckdosenleiste",
+      "price": "7.99"
+    },
+    {
+      "product": "TOPCRAFT Arbeitshose",
+      "price": "14.99"
+    },
+    {
+      "product": "EXPERTIZ Packband mit Abroller",
+      "price": "2.49"
+    }
+  ]
+}

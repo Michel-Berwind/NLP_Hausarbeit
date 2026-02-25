@@ -2,7 +2,7 @@
 
 **Masterarbeit - Natural Language Processing**
 
-Dieses Repository enthält eine klassische CV + OCR + NLP Pipeline zur automatischen Extraktion von Produktinformationen und Preisen aus deutschen Discounter-Prospekten (Aldi & Lidl).
+Dieses Repository enthält eine klassische CV + OCR + NLP Pipeline zur automatischen Extraktion von Produktinformationen und Preisen aus deutschen Discounter-Prospekten (Aldi).
 
 ---
 
@@ -119,6 +119,38 @@ python -m spacy download de_core_news_sm
 - **Linux:** `sudo apt-get install tesseract-ocr tesseract-ocr-deu`
 - **Mac:** `brew install tesseract tesseract-lang`
 
+**6. Poppler installieren (für PDF-Konvertierung):**
+- **Windows:** https://github.com/oschwartz10612/poppler-windows/releases/ (poppler-xx.xx.x/Library/bin/ zum PATH hinzufügen)
+- **Linux:** `sudo apt-get install poppler-utils`
+- **Mac:** `brew install poppler`
+
+---
+
+## 📄 PDF zu PNG konvertieren
+
+Die Pipeline arbeitet mit PNG-Bildern. Konvertieren Sie Ihre PDFs zuerst:
+
+### Einzelne PDF-Datei
+
+```bash
+python -m src.preprocessing.pdf_to_images --input-file "data/raw/aldi/prospekt.pdf" \
+                                          --output-dir "data/images/aldi" \
+                                          --dpi 300
+```
+
+### Gesamtes Verzeichnis
+
+```bash
+# Alle Aldi-PDFs konvertieren
+python -m src.preprocessing.pdf_to_images --input-dir "data/raw/aldi" \
+                                          --output-dir "data/images/aldi" \
+                                          --dpi 300
+
+
+```
+
+**Hinweis:** DPI=300 ist empfohlen für beste OCR-Qualität. Jede PDF-Seite wird als separate PNG-Datei gespeichert (z.B. `prospekt_page1.png`, `prospekt_page2.png`, ...).
+
 ---
 
 ## 🚀 Pipeline ausführen
@@ -179,13 +211,13 @@ NLP_HAUSARBEIT/
 ├── data/
 │   ├── raw/              # Original PDFs
 │   │   ├── aldi/
-│   │   └── lidl/
+│   │
 │   ├── images/           # PDF → PNG Konvertierungen
 │   │   ├── aldi/
-│   │   └── lidl/
+│   │
 │   ├── ocr_text/         # OCR Rohausgaben (optional)
 │   │   ├── aldi/
-│   │   └── lidl/
+│   │
 │   └── annotations/      # Ground Truth für Evaluation
 │       └── *.json
 │
@@ -260,21 +292,30 @@ Dieses Projekt demonstriert folgende NLP-Methoden:
 
 ### Experiment wiederholen
 
-1. **Daten vorbereiten:** PDFs in `data/raw/` ablegen
-2. **Pipeline ausführen:** 
+1. **Daten vorbereiten:** PDFs in `data/raw/aldi/` ablegen
+
+2. **PDFs zu PNGs konvertieren:**
+   ```bash
+   # Aldi-Prospekte
+   python -m src.preprocessing.pdf_to_images --input-dir data/raw/aldi \
+                                             --output-dir data/images/aldi
+   
+
+   ```
+
+3. **Pipeline ausführen:** 
    ```bash
    python -m src.pipeline --input-dir data/images/aldi --output results/aldi.json
    ```
-3. **Evaluation:** 
+
+4. **Evaluation:** 
    ```bash
    python -m src.evaluation.evaluate --predictions results/ --annotations data/annotations/
    ```
 
 ### Erwartete Ergebnisse
 
-Die Pipeline wurde auf ALDI- und LIDL-Prospekten getestet:
-- **Testdaten:** 7-10 Seiten pro Prospekt
-- **Erwartete F1-Scores:** Variieren je nach Prospektqualität (siehe Evaluation)
+Die Pipeline wurde auf ALDI-Prospekten getestet.
 
 ---
 

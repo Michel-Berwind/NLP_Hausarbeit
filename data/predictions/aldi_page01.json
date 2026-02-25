@@ -1,0 +1,17 @@
+{
+  "page_id": "aldi_page01",
+  "offers": [
+    {
+      "product": "RIDE GO Fahrradschloss",
+      "price": "4.99"
+    },
+    {
+      "product": "RIDE GO LED-Premium-Fahrradlar Front-Scheinwerfer",
+      "price": "12.99"
+    },
+    {
+      "product": "RIDE GO Fahrrad-Zubehör",
+      "price": "3.99"
+    }
+  ]
+}

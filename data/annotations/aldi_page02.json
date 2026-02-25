@@ -1,0 +1,29 @@
+{
+  "page_id": "aldi_page02",
+  "offers": [
+    {
+      "product": "Wiederaufladbarer Kompressor",
+      "price": "19.99"
+    },
+    {
+      "product": "Fahrrad-Reparaturwerkzeug",
+      "price": "3.99"
+    },
+    {
+      "product": "GARDENLINE Erdbeer- oder Rhabarberpflanzen",
+      "price": "1.59"
+    },
+    {
+      "product": "GARDENLINE Grünpflanze / Frühlingsblüher / Kräuter",
+      "price": "1.89"
+    },
+    {
+      "product": "GARDENLINE Edelginster / Mandelbäumchen / Rhododendron",
+      "price": "3.49"
+    },
+    {
+      "product": "GARDENLINE Frühlingsblumen",
+      "price": "1.49"
+    }
+  ]
+}
